@@ -1,0 +1,145 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'),
+    url('./assets/fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('./assets/fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+    url('./assets/fonts/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+    url('./assets/fonts/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 1020px;
+  height: auto;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo__container {
+  width: 150px;
+  height: 100%;
+  padding: 18px 0;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo__description {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 53px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -0.4px;
+}
+
+.logo__description::after {
+  content: "*";
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 26px;
+  color: #df6760;
+}
+
+.navigation__container {
+  width: 380px;
+  height: 100%;
+}
+
+.navigation__section {
+  height: 100%;
+  /*padding: 0 0 0 6px;*/
+}
+
+.header__menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 8px;
+  list-style: none;
+}
+
+.header__menu__item {
+  height: 100%;
+  /*padding: 0 0 0 6px;*/
+  padding-top: 19px;
+  margin: 0 0 0 2px;
+}
+
+.header__menu__item:not(:first-child)::before {
+  content: ".";
+  position: relative;
+  bottom: 3px;
+  left: -13px;
+  font-weight: 700;
+  font-size: 19px;
+  color: #3e4252;
+}
+
+.header__menu__a {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  /*line-height: 6.32px;*/
+  line-height: 30px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__menu__a:focus {
+  color: #df6760;
+}
+
+.header__menu__a:hover {
+  color: #df6760;
+}
