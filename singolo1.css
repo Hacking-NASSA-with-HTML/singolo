@@ -39,6 +39,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
@@ -144,3 +145,125 @@
 .header__menu__a:hover {
   color: #df6760;
 }
+
+/***********************<section class="slider__section">***********************/
+
+.slider__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1020px;
+  height: 594px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.invisible__h1 {
+  height: auto;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.slider__img_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.previous__slide__arrow__container {
+  height: 100%;
+  width: 10%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.previous__slide__arrow {
+  width: 16px;
+  height: 27px;
+  background-color: transparent;
+  opacity: 0.25;
+  background: url("./assets/images/svg/previous__slide__arrow.svg") center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: -5px 0 0 42px;
+}
+
+.previous__slide__arrow:hover {
+  opacity: 1;
+}
+
+.vertical__img__container {
+  height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.vertical__img {
+  width: 240px;
+  height: 483px;
+  background: url("./assets/images/png/iPhone_Vertical.png") center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -4px 0 0 10px;
+}
+
+.horizontal__img__container {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal__img {
+  width: 484px;
+  height: 240px;
+  background: url("./assets/images/png/iPhone_Horizontal.png") center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -6px 0 0 17px;
+}
+
+.next__slide__arrow__container {
+  height: 100%;
+  width: 10%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.next__slide__arrow {
+  width: 16px;
+  height: 27px;
+  background-color: transparent;
+  opacity: 0.25;
+  background: url("./assets/images/svg/next__slide__arrow.svg") center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: -4px 0 0 46px;
+}
+
+.next__slide__arrow:hover {
+  opacity: 1;
+}
+
