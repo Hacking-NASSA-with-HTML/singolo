@@ -146,6 +146,10 @@
   color: #df6760;
 }
 
+.main {
+  width: 1020px;
+}
+
 /***********************<section class="slider__section">***********************/
 
 .slider__section {
