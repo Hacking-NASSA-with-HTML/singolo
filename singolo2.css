@@ -1,0 +1,165 @@
+/*will use this in future projects, it's too late now*/
+
+/* body,
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+div,
+p, /****** p better don't reset, in FFox it's getting worse*//*
+ul,
+li,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+/*fixes from 1 part*/
+
+.services__description {
+  margin: 21px 0 0 0px;
+  line-height: 30px;
+}
+
+.services__item__container:nth-child(1) {
+  margin: 0 0 0 -5.8px;
+}
+
+.services__item__container:nth-child(1) .service__item__pen__img {
+  margin: 4px 0px 0 -0.8px;
+  padding-top: 1px;
+}
+
+.services__item__container:nth-child(1) .service__title {
+  letter-spacing: -0.25px;
+  margin: 0 0 0 -2px;
+}
+
+.services__item__container:nth-child(1) .service__item__paragraph {
+  letter-spacing: -0.28px;
+  margin: 9px 0 0 -1.285px;
+  /* width: 220px; */
+  line-height: 22px;
+}
+
+.services__item__container:nth-child(2) {
+  margin: 0 0 0 -6px;
+}
+
+.services__item__container:nth-child(2) .service__item__bulb__img {
+  margin: 4.5px 0 0 0.5px;
+}
+
+.services__item__container:nth-child(2) .service__title {
+  letter-spacing: -0.2px;
+  margin: 0 0 0 0;
+}
+
+.services__item__container:nth-child(2) .service__item__paragraph {
+  letter-spacing: -0.28px;
+  margin: 9px 0 0 1px;
+  /* width: 220px; */
+  line-height: 22px;
+}
+
+.services__item__container:nth-child(3) {
+  margin: 0 -11.5px 0 0;
+}
+
+.services__item__container:nth-child(3) .service__item__heart__img {
+  margin: 4.5px 0px 0 3px;
+}
+
+.services__item__container:nth-child(3) .service__title {
+  letter-spacing: -0.4px;
+  margin: 0 0 0 0;
+}
+
+.services__item__container:nth-child(3) .service__item__paragraph {
+  /* letter-spacing: -0.1842px; */
+  letter-spacing: -0.28px;
+  margin: 9px 0 0 -2px;
+  width: 220px;
+  line-height: 22px;
+}
+
+.services__item__container:nth-child(4) {
+  margin: 0 0 0 -5.5px;
+}
+
+.services__item__container:nth-child(4) .service__item__phone__img {
+  margin: 3px 0 0 -0.7625px;
+}
+
+.services__item__container:nth-child(4) .services__item__text__container {
+  margin: -0.5px 10px 0 27px;
+}
+
+.services__item__container:nth-child(4) .service__title {
+  letter-spacing: -0.4px;
+}
+
+.services__item__container:nth-child(4) .service__item__paragraph {
+  /* letter-spacing: -0.1842px; */
+  letter-spacing: -0.28px;
+  margin: 9px 0 0 -2px;
+  line-height: 22px;
+}
+
+.services__item__container:nth-child(5) {
+  margin: 0 0 0 -5px;
+}
+
+.services__item__container:nth-child(5) .service__item__support__img {
+  margin: 2.5px 0 0 5px;
+}
+
+.services__item__container:nth-child(5) .services__item__text__container {
+  margin: -0.5px 10px 0 27px;
+}
+
+.services__item__container:nth-child(5) .service__title {
+  letter-spacing: 0.02px;
+}
+
+.services__item__container:nth-child(5) .service__item__paragraph {
+  letter-spacing: -0.1845px;
+  margin-top: 9px;
+  margin-left: 4px;
+  line-height: 22px;
+}
+
+.services__item__container:nth-child(6) {
+  margin: 0 -11.5px 0 0;
+}
+
+.services__item__container:nth-child(6) .service__item__star__img {
+  margin: 2.5px 0 0 3px;
+}
+
+.services__item__container:nth-child(6) .services__item__text__container {
+  margin: -0.5px 10px 0 31.5px;
+}
+
+.services__item__container:nth-child(6) .service__title {
+  letter-spacing: -0.18px;
+  padding-left: 2px;
+}
+
+.services__item__container:nth-child(6) .service__item__paragraph {
+  /* letter-spacing: -0.1842px; */
+  letter-spacing: -0.1px;
+  margin: 9px 0 0 0;
+  width: 220px;
+  line-height: 22px;
+}
+
+.service__title {
+  font-weight: 900;
+}
+
+/**************** The end of fixes from 1 part***************************/
