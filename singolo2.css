@@ -162,4 +162,132 @@ a {
   font-weight: 900;
 }
 
-/**************** The end of fixes from 1 part***************************/
+/**************** The end of fixes from 1 part**********************************/
+
+/****************************************** Section  PORTFOLIO *****************/
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 864px;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio__title {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.h2__portfolio__title {
+  color: #666d89;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0;
+  border: 0;
+  margin: 61px 0 0 40px;
+  letter-spacing: -0.2px;
+}
+
+.section__portfolio__description {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__description__paragraph {
+  color: #767e9e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0;
+  border: 0;
+  margin: 18px 0 0 40px;
+  /* text-align: justify; */
+}
+
+.section__portfolio__tag__buttons {
+  display: flex;
+  width: 400px;
+  margin: 12px 0 0 41px;
+}
+
+.tag__button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: auto;
+  height: 22px;
+  border: 1px solid #666d89;
+  color: #767e9e;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  margin: 0px 12px 0 0;
+  padding: 0px 5px 0 5px;
+  line-height: 17px;
+}
+
+.tag__button:nth-child(1) {
+  letter-spacing: 0.55px;
+}
+
+.tag__button:nth-child(3) {
+  letter-spacing: -0.1px;
+}
+
+.tag__button:nth-child(4) {
+  letter-spacing: -0.1px;
+  margin-left: -1px;
+}
+
+.tag__button:focus {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.tag__button:hover {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio__images__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  height: 601px;
+  list-style-type: none;
+  margin: 19px 0 0px 0;
+}
+
+.work__example {
+  display: block;
+  width: 220px;
+  height: 187px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.work__example:nth-child(4) {
+  margin-right: 0;
+}
+
+.work__example:nth-child(8) {
+  margin-right: 0;
+}
+
+.work__example:nth-child(12) {
+  margin-right: 0;
+}
+
+.work__example:hover {
+  box-shadow: 0 4px 20px 0 rgba(224, 211, 27, 0.918);
+  cursor: pointer;
+  transform: scale(1.1);
+}
