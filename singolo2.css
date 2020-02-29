@@ -299,3 +299,133 @@ a {
 }
 
 /***********************************The end of Section  PORTFOLIO *****************/
+
+/****************************************** Section  About Us *****************/
+
+.about__us {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 728px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about__us__title {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.h2__about__us__title {
+  color: #666d89;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0;
+  border: 0;
+  margin: 60px 0 0 40px;
+  letter-spacing: -0.3px;
+}
+
+.about__us__description {
+  width: 940px;
+  height: auto;
+  margin: 1px 40px 0 40.5px;
+}
+
+.about__us__description__paragraph {
+  color: #767e9e;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.125px;
+}
+
+.our__employees__block {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 940px;
+  height: auto;
+  margin: 27px 0 0 40px;
+}
+
+.employee__card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  width: 300px;
+}
+
+#employee2 {
+  margin: 0 21px 0 19px;
+}
+
+.employee__avatar {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.employee__name {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin: 18px 0 0 0;
+  color: #666d89;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 17px;
+  white-space: nowrap;
+  letter-spacing: -0.4px;
+}
+
+.employee__about {
+  padding: 0;
+  margin: 0;
+  margin: 10px 0 0 0;
+  width: 299px;
+  color: #767e9e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.56px;
+  letter-spacing: 0.05px;
+}
+
+.employee__socialnetworks__block {
+  display: flex;
+  justify-content: start;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 24px 0 0 1px;
+}
+
+.socialnetworks__item {
+  margin: 0;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.socialnetworks__link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.socialnetwork__img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+}
+
+.socialnetwork__img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: ease;
+}
