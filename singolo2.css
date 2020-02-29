@@ -8,7 +8,7 @@ h1,
 h2,
 h3,
 div,
-p, /****** p better don't reset, in FFox it's getting worse*//*
+p, ****** p better do not reset, in FFox it's getting worse**
 ul,
 li,
 button,
@@ -18,7 +18,7 @@ a {
   border: 0;
 } */
 
-/*fixes from 1 part*/
+/*improvements to 1 part*/
 
 .services__description {
   margin: 21px 0 0 0px;
@@ -291,3 +291,11 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+/* Feature to hide any images after 12 already added*/
+
+.work__example:nth-child(n+13) {
+  display: none;
+}
+
+/***********************************The end of Section  PORTFOLIO *****************/
