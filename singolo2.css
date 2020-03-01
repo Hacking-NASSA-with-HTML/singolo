@@ -1,4 +1,8 @@
 /*will use this in future projects, it's too late now*/
+/* And never use
+.body {
+  display: flex;
+}*/
 
 /* body,
 header,
@@ -162,9 +166,9 @@ a {
   font-weight: 900;
 }
 
-/**************** The end of fixes from 1 part**********************************/
+/**************** The end of fixes from 1 part *************************************/
 
-/****************************************** Section  PORTFOLIO *****************/
+/****************************************** Section  Portfolio *********************/
 
 .portfolio {
   display: flex;
@@ -189,6 +193,7 @@ a {
   border: 0;
   margin: 61px 0 0 40px;
   letter-spacing: -0.2px;
+  /* line-height: 36px; */
 }
 
 .section__portfolio__description {
@@ -201,10 +206,10 @@ a {
   color: #767e9e;
   font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 29px;
   padding: 0;
   border: 0;
-  margin: 18px 0 0 40px;
+  margin: 19px 0 0 40px;
   /* text-align: justify; */
 }
 
@@ -219,7 +224,7 @@ a {
   padding: 0;
   border: 0;
   width: auto;
-  height: 22px;
+  height: 21.5px;
   border: 1px solid #666d89;
   color: #767e9e;
   font-size: 12px;
@@ -229,9 +234,10 @@ a {
   background-color: #2d303a;
   border: 1px solid #666d89;
   border-radius: 5px;
-  margin: 0px 12px 0 0;
-  padding: 0px 5px 0 5px;
-  line-height: 17px;
+  margin: 0px 10.5px 0 0;
+  padding: 0px 5.5px 0 5.5px;
+  line-height: 20px;
+  text-align: justify;
 }
 
 .tag__button:nth-child(1) {
@@ -243,8 +249,8 @@ a {
 }
 
 .tag__button:nth-child(4) {
-  letter-spacing: -0.1px;
-  margin-left: -1px;
+  letter-spacing: 0px;
+  margin-left: 0px;
 }
 
 .tag__button:focus {
@@ -298,9 +304,9 @@ a {
   display: none;
 }
 
-/***********************************The end of Section  PORTFOLIO *****************/
+/*********************************** The end of Section  PORTFOLIO *****************/
 
-/****************************************** Section  About Us *****************/
+/****************************************** Section  About Us **********************/
 
 .about__us {
   display: flex;
@@ -339,7 +345,8 @@ a {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.125px;
+  /* letter-spacing: 0.125px; */
+  text-align: justify;
 }
 
 .our__employees__block {
@@ -385,12 +392,15 @@ a {
   padding: 0;
   margin: 0;
   margin: 10px 0 0 0;
-  width: 299px;
+  width: 300px;
   color: #767e9e;
   font-size: 12px;
   font-weight: 400;
-  line-height: 21.56px;
-  letter-spacing: 0.05px;
+  line-height: 21px;
+  /*If there is now bellow property  murkup
+  crushes while zoom in less 100% on laptop*/
+  letter-spacing: -0.2px;
+  /* text-align: justify; */
 }
 
 .employee__socialnetworks__block {
@@ -406,7 +416,7 @@ a {
 .socialnetworks__item {
   margin: 0;
   padding: 0;
-  margin: 0 8px 0 0;
+  margin: 1px 8px 0 0;
 }
 
 .socialnetworks__link {
@@ -429,3 +439,17 @@ a {
   transform: scale(1.1);
   transition: ease;
 }
+
+/*kostyls for section About Us*/
+.employee__card:nth-child(1) .employee__about {
+  /* It didn't work on this case, but sometimes works good*/
+  /* text-align: justify; */
+
+  letter-spacing: -0.07px;
+}
+
+.employee__card:nth-child(3) .employee__socialnetworks__block {
+  margin: 24px 0 0 0;
+}
+
+/*********************************** The end of Section  About Us ******************/
