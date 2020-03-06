@@ -28,13 +28,15 @@
             <li class="header__menu__item"><a class="header__menu__a" href="#services">Services</a></li>
             <li class="header__menu__item"><a class="header__menu__a" href="#portfolio">Portfolio</a></li>
             <li class="header__menu__item"><a class="header__menu__a" href="#about">About</a></li>
-            <li class="header__menu__item"><a class="header__menu__a" href="#">Contact</a></li>
+            <li class="header__menu__item"><a class="header__menu__a" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+
   <main class="main">
+
     <section class="slider__section">
       <div class="invisible__h1">
         <h1 class="visuallyhidden">RSSchool 2020-Q1. Let's roll</h1>
@@ -54,6 +56,7 @@
         </div>
       </div>
     </section>
+
     <section class="services__section" id="services">
       <div class="services__section_container">
         <div class="services__section__title">
@@ -158,6 +161,7 @@
         </div>
       </div>
     </section>
+
     <section class="portfolio" id="portfolio">
       <div class="portfolio__title">
         <h2 class="h2__portfolio__title">Portfolio</h2>
@@ -201,6 +205,7 @@
         </li>
       </ul>
     </section>
+
     <section class="about__us" id="about">
       <div class="about__us__title">
         <h2 class="h2__about__us__title">About Us</h2>
@@ -270,7 +275,58 @@
         </div>
       </div>
     </section>
+
+    <section class="contact__us" id="contact">
+      <div class="contact__us__title">
+        <h2 class="h2__contact__us__title">Get a Quote</h2>
+      </div>
+      <div class="contact__us__description">
+        <div class="p__contact__us__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.</div>
+      </div>
+      <div class="contact__us__form__wrapper">
+        <form action="./coolaction/php" method="post" class="contact__form">
+          <label for="personName"></label>
+          <input name="firstName" type="text" id="personName" required placeholder="Name (Required)">
+          <label for="personEmail"></label>
+          <input type="email" name="personMail" id="personEmail" required placeholder="Email (Required)">
+          <label for="subject"></label>
+          <input name="Subject" type="text" id="subject" placeholder="Subject">
+          <label for="personComment"></label>
+          <textarea name="messageContent" id="personComment" cols="75" rows="10" placeholder="Describe your project in detail..."></textarea>
+          <input type="button" value="Send" id="sendButton">
+        </form>
+        <div class="contact__info__subwrapper">
+          <div class="info__subwrapper__title">
+            <h3 class="h3__info__subwrapper__title">Contact Information</h3>
+          </div>
+          <div class="contact__info__subwrapper__description">
+            <p class="info__subwrapper__paragraph">Quisque hendrerit purus dapibus, ornare nibh vitae,
+              viverra nibh. Fusce vitae
+              aliquam tellus. Proin sit amet volutpat
+              libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+              felis.</p>
+          </div>
+          <div class="location">
+            <img src="./assets/images/png/location_icon_png.png" alt="location sign" class="location__icon">
+            <p class="location__address" title="Find us">Elm St. 14/05 Lost City</p>
+          </div>
+          <div class="call__us">
+            <img src="./assets/images/png/phone_icon_png.png" alt="phone icon" class="call__us__icon">
+            <a title="Call us" href="tel:035283318635" class="call__us__link">03528 331 86 35</a>
+          </div>
+          <div class="email__us">
+            <img src="./assets/images/png/mail_icon_png.png" alt="email icon" class="write__us_icon">
+            <a title="Send us an email" href="mailto:info@singolo.com" class="write__us__link">info@singolo.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
 </body>
 
 </html>
