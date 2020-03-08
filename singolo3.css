@@ -220,10 +220,9 @@ button {
   height: 11px;
 }
 
-/* .location__icon:hover {
+.location__icon:hover {
   cursor: pointer;
-  background-color: black;
-} */
+}
 
 .location__address {
   display: inline-block;
@@ -258,6 +257,10 @@ button {
   height: 11px;
 }
 
+.call__us__icon:hover {  
+  cursor: pointer;
+}
+
 .call__us__link {
   margin: 0;
   padding: 0;
@@ -285,6 +288,10 @@ button {
   border: 0;
   width: 12px;
   height: 8px;
+}
+
+.write__us_icon:hover {
+  cursor: pointer;
 }
 
 .write__us__link {
