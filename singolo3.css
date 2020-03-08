@@ -58,6 +58,7 @@ button {
 
 .contact__form {
   position: relative;
+  width: 625px;
 }
 
 #personName {
@@ -127,7 +128,7 @@ button {
 
 #sendButton {
   position: absolute;
-  right: -75px;
+  right: -170px;
   bottom: 50px;
   margin: 0;
   padding: 0;
@@ -155,7 +156,7 @@ button {
   flex-direction: column;
   justify-content: start;
   height: auto;
-  margin-left: -84px;
+  margin-left: 11px;
 }
 
 .info__subwrapper__title {
@@ -204,6 +205,7 @@ button {
 .location:hover {
   background-color: #fff;
   cursor: pointer;
+  color: #d6564f;
 }
 
 .location__icon {
@@ -233,10 +235,11 @@ button {
   letter-spacing: -0.1px;
 }
 
-/* .location__address:hover {
+.location__address:hover {
+  background-color: #fff;
   cursor: pointer;
-  color: #000;
-} */
+  color: #d6564f;
+}
 
 .call__us {
   width: 100%;
@@ -297,3 +300,65 @@ button {
 }
 
 /********************************** The end of Section  Contacts *******************/
+
+/********************************************* footer ******************************/
+
+.footer {
+  /* height: 76px; */
+  /* height: auto; */
+  width: 1020px;
+  min-height: 76px;
+  background-color: #2d303a;
+  margin: 0 auto;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin: 0 40px 0 40px;
+}
+
+.copyright {
+  width: 15%;
+  font-size: 12px;
+  font-weight: 400;
+  color: #52586c;
+  margin:  19px 0 0 2px;
+  letter-spacing: -0.2px;
+}
+
+.connect__with__us {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  width: 150px;
+  margin:22.85px 1px 0 0;
+}
+
+.connect__with__us__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: auto;
+  margin: -0.5px 9px 0px -1px;
+}
+
+.footer__weblink {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.web__icons {
+  width: 32px;
+  height: 32px;
+}
+
+.web__icons:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

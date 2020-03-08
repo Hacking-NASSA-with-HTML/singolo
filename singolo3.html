@@ -289,7 +289,7 @@
       <div class="contact__us__form__wrapper">
         <form action="./coolaction/php" method="post" class="contact__form">
           <label for="personName"></label>
-          <input name="firstName" type="text" id="personName" required placeholder="Name (Required)">
+          <input name="firstName" type="text" id="personName" autofocus required placeholder="Name (Required)">
           <label for="personEmail"></label>
           <input type="email" name="personMail" id="personEmail" required placeholder="Email (Required)">
           <label for="subject"></label>
@@ -311,7 +311,7 @@
           </div>
           <div class="location">
             <img src="./assets/images/png/location_icon_png.png" alt="location sign" class="location__icon">
-            <p class="location__address" title="Find us">Elm St. 14/05 Lost City</p>
+            <span class="location__address" title="Find us">Elm St. 14/05 Lost City</span>
           </div>
           <div class="call__us">
             <img src="./assets/images/png/phone_icon_png.png" alt="phone icon" class="call__us__icon">
@@ -326,6 +326,18 @@
     </section>
 
   </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="copyright">© Copyright 2013</p>
+      <ul class="connect__with__us">
+        <li class="connect__with__us__item"><a title="follow us" href="#" class="footer__weblink"><img src="./assets/images/png/facebook__png__icon.png" alt="socialnetwork image" class="web__icons"></a></li>
+        <li class="connect__with__us__item"><a title="follow us" href="#" class="footer__weblink"><img src="./assets/images/png/ghangout_png_icon.png" alt="socialnetwork image" class="web__icons"></a></li>
+        <li class="connect__with__us__item"><a title="follow us" href="#" class="footer__weblink"><img src="./assets/images/png/tweeter_png_icon.png" alt="socialnetwork image" class="web__icons"></a></li>
+        <li class="connect__with__us__item"><a title="follow us" href="#" class="footer__weblink"><img src="./assets/images/png/linkedin_png_icon.png" alt="socialnetwork image" class="web__icons"></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
