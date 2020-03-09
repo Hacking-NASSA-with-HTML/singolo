@@ -79,6 +79,14 @@ button {
 
 #personName::placeholder {
   color: #f48c8f;
+  opacity: 1;
+  letter-spacing: -0.07px;
+}
+
+#personName:hover,
+#personName:focus {
+  color: #d6564f;
+  background-color: #f0d8d9;
 }
 
 #personEmail {
@@ -95,6 +103,14 @@ button {
 
 #personEmail::placeholder {
   color: #f48c8f;
+  opacity: 1;
+  letter-spacing: -0.07px;
+}
+
+#personEmail:hover,
+#personEmail:focus {
+  color: #d6564f;
+  background-color: #f0d8d9;
 }
 
 #subject {
@@ -111,13 +127,21 @@ button {
 
 #subject::placeholder {
   color: #f48c8f;
+  opacity: 1;
+  letter-spacing: -0.05px;
+}
+
+#subject:hover,
+#subject:focus {
+  color: #d6564f;
+  background-color: #f0d8d9;
 }
 
 #personComment {
   width: 604px;
   height: 195px;
   background-color: #d6564f;
-  margin: 16px 0 0 0;
+  margin: 15.5px 0 0 0;
   color: #f0d8d9;
   font-size: 12px;
   font-weight: 400;
@@ -128,6 +152,14 @@ button {
 
 #personComment::placeholder {
   color: #f48c8f;
+  opacity: 1;
+  letter-spacing: -0.05px;
+}
+
+#personComment:hover,
+#personComment:focus {
+  color: #d6564f;
+  background-color: #f0d8d9;
 }
 
 #sendButton {
@@ -257,7 +289,7 @@ button {
   height: 11px;
 }
 
-.call__us__icon:hover {  
+.call__us__icon:hover {
   cursor: pointer;
 }
 

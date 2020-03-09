@@ -8,9 +8,7 @@
   <link rel="icon" href="https://rs.school/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="https://rs.school/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="./singolo1.css">
-  <link rel="stylesheet" href="./singolo2.css">
-  <link rel="stylesheet" href="./singolo3.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="body">
@@ -287,7 +285,7 @@
           tortor mauris condimentum nibh.</div>
       </div>
       <div class="contact__us__form__wrapper">
-        <form action="./coolaction/php" method="post" class="contact__form">
+        <form action="./coolaction.php" method="post" class="contact__form">
           <label for="personName"></label>
           <input name="firstName" type="text" id="personName" autofocus required placeholder="Name (Required)">
           <label for="personEmail"></label>
@@ -297,7 +295,7 @@
           <label for="personComment"></label>
           <textarea name="messageContent" id="personComment" cols="75" rows="10"
             placeholder="Describe your project in detail..."></textarea>
-          <input type="button" value="Submit" id="sendButton">
+          <input type="submit" value="Submit" id="sendButton">
         </form>
         <div class="contact__info__subwrapper">
           <div class="info__subwrapper__title">
@@ -311,15 +309,15 @@
               felis.</p>
           </div>
           <div class="location">
-            <img src="./assets/images/png/location_icon_png.png" alt="location sign" class="location__icon">
-            <span class="location__address" title="Find us">Elm St. 14/05 Lost City</span>
+            <a title="Find us" href="#"><img src="./assets/images/png/location_icon_png.png" alt="location sign" class="location__icon">
+            <span class="location__address" title="Find us">Elm St. 14/05 Lost City</span></a>
           </div>
           <div class="call__us">
-            <img src="./assets/images/png/phone_icon_png.png" alt="phone icon" class="call__us__icon">
+            <a title="Call us" href="tel:035283318635"><img src="./assets/images/png/phone_icon_png.png" alt="phone icon" class="call__us__icon"></a>
             <a title="Call us" href="tel:035283318635" class="call__us__link">03528 331 86 35</a>
           </div>
           <div class="email__us">
-            <img src="./assets/images/png/mail_icon_png.png" alt="email icon" class="write__us_icon">
+            <a title="Send us an email" href="mailto:info@singolo.com"><img src="./assets/images/png/mail_icon_png.png" alt="email icon" class="write__us_icon"></a>
             <a title="Send us an email" href="mailto:info@singolo.com" class="write__us__link">info@singolo.com</a>
           </div>
         </div>
