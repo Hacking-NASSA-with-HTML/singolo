@@ -277,6 +277,18 @@
     </section>
 
     <section class="contact__us" id="contact">
+
+        <div id="confirmationMessageBlock" class="hidden">
+            <div id="message">
+                <p class="message__sent">Письмо отправлено</p>
+                <span id="temaP" class="collaps__p__tema temaP">Тема: </span><span id="subjectField"></span>
+                <br>
+                <span id="opisanieP" class="collaps__p__opisanie opisanieP">Описание: </span><span id="textareaField"></span>
+                <br>
+                <button id="closeButton">OK</button>
+            </div>
+        </div>
+
       <div class="contact__us__title">
         <h2 class="h2__contact__us__title">Get a Quote</h2>
       </div>
@@ -286,9 +298,10 @@
           ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.</div>
       </div>
+
       <div class="contact__us__form__wrapper">
         <!-- <form action="./coolaction.php" method="post" class="contact__form"> -->
-        <form method="post" class="contact__form"><!-- deleted action property -->
+        <form method="post" class="contact__form" id="nearFooterForm"><!-- deleted action property -->
           <label for="personName"></label>
           <input name="firstName" type="text" id="personName" autofocus required placeholder="Name (Required)">
           <label for="personEmail"></label>
@@ -299,7 +312,9 @@
           <textarea name="messageContent" id="personComment" cols="75" rows="10"
             placeholder="Describe your project in detail..."></textarea>
           <input type="submit" value="Submit" id="sendButton">
+
         </form>
+
         <div class="contact__info__subwrapper">
           <div class="info__subwrapper__title">
             <h3 class="h3__info__subwrapper__title">Contact Information</h3>
