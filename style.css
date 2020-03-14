@@ -1450,3 +1450,49 @@ button {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+/********************************** Let's make our header fixed to top *************/
+
+.header__wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.slider__section {
+    margin-top: 94px;
+}
+
+.services__section_container  {
+    margin-top: 97px;
+    margin-bottom: 100px;
+}
+
+.services__section {
+    height: 591px;
+}
+
+.portfolio {
+    height: 960px;
+}
+
+.portfolio__title {
+    margin-top: 96px;
+}
+
+.about__us {
+    height: 825px;
+}
+
+.about__us__title {
+    margin-top: 97px;
+}
+
+.contact__us {
+    height: 745px;
+}
+
+.contact__us__title {
+    margin-top: 97px;
+}
