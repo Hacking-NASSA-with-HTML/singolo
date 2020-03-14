@@ -1496,3 +1496,14 @@ button {
 .contact__us__title {
     margin-top: 97px;
 }
+
+
+/********************************** Let's add focused class to all targeted li *****/
+
+.focused {
+    color: #df6760;
+}
+
+
+/********************************** Let's add conformation message from form *******/
+

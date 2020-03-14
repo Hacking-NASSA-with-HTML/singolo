@@ -22,8 +22,8 @@
             </div>
             <div class="navigation__container">
                 <nav class="navigation__section">
-                    <ul class="header__menu__wrapper">
-                        <li class="header__menu__item"><a class="header__menu__a" href="#">Home</a></li>
+                    <ul class="header__menu__wrapper" id="navigation">
+                        <li class="header__menu__item"><a class="header__menu__a focused" href="#">Home</a></li>
                         <li class="header__menu__item"><a class="header__menu__a" href="#services">Services</a></li>
                         <li class="header__menu__item"><a class="header__menu__a" href="#portfolio">Portfolio</a></li>
                         <li class="header__menu__item"><a class="header__menu__a" href="#about">About</a></li>
@@ -287,7 +287,8 @@
           tortor mauris condimentum nibh.</div>
       </div>
       <div class="contact__us__form__wrapper">
-        <form action="./coolaction.php" method="post" class="contact__form">
+        <!-- <form action="./coolaction.php" method="post" class="contact__form"> -->
+        <form method="post" class="contact__form"><!-- deleted action property -->
           <label for="personName"></label>
           <input name="firstName" type="text" id="personName" autofocus required placeholder="Name (Required)">
           <label for="personEmail"></label>
