@@ -41,5 +41,13 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('opisanieP').classList.add('collaps__p__opisanie');
 });
 
+
 /********************************** Let's disable message from form ****************/
+
+const DISABLE_FORM = document.getElementById('nearFooterForm');
+
+
+DISABLE_FORM.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
 
