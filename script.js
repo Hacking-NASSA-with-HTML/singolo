@@ -1,3 +1,5 @@
+
+
 const NAVIGATION = document.getElementById('navigation');
 const BUTTON = document.getElementById('sendButton');
 const CLOSE_BUTTON = document.getElementById('closeButton');
@@ -10,6 +12,14 @@ NAVIGATION.addEventListener('click', (event) => {
     NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('focused'));
     event.target.classList.add('focused');
 });
+
+
+/***************************************** Let's make slider ***********************/
+
+
+
+
+/********************************** Let's make modal message from form *************/
 
 BUTTON.addEventListener('click', () => {
     const subject = document.getElementById('subject').value.toString();
