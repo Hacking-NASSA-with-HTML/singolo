@@ -1515,6 +1515,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+    transform: translate(-10%, -40%);
     right: 0;
     width: 100vw;
     height: 100vh;
@@ -1528,8 +1529,9 @@ button {
 
 #message {
     position: absolute;
-    top: 25%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     height: auto;
     min-width: 300px;
     max-width: 600px;

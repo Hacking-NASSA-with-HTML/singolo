@@ -40,3 +40,6 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('temaP').classList.add('collaps__p__tema');
     document.getElementById('opisanieP').classList.add('collaps__p__opisanie');
 });
+
+/********************************** Let's disable message from form ****************/
+

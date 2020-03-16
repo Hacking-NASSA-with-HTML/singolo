@@ -278,16 +278,7 @@
 
     <section class="contact__us" id="contact">
 
-        <div id="confirmationMessageBlock" class="hidden">
-            <div id="message">
-                <p class="message__sent">Письмо отправлено</p>
-                <span id="temaP" class="collaps__p__tema temaP">Тема: </span><span id="subjectField"></span>
-                <br>
-                <span id="opisanieP" class="collaps__p__opisanie opisanieP">Описание: </span><span id="textareaField"></span>
-                <br>
-                <button id="closeButton">OK</button>
-            </div>
-        </div>
+
 
       <div class="contact__us__title">
         <h2 class="h2__contact__us__title">Get a Quote</h2>
@@ -301,7 +292,7 @@
 
       <div class="contact__us__form__wrapper">
         <!-- <form action="./coolaction.php" method="post" class="contact__form"> -->
-        <form method="post" class="contact__form" id="nearFooterForm"><!-- deleted action property -->
+        <form class="contact__form" id="nearFooterForm"><!-- deleted action property -->
           <label for="personName"></label>
           <input name="firstName" type="text" id="personName" autofocus required placeholder="Name (Required)">
           <label for="personEmail"></label>
@@ -312,6 +303,17 @@
           <textarea name="messageContent" id="personComment" cols="75" rows="10"
             placeholder="Describe your project in detail..."></textarea>
           <input type="submit" value="Submit" id="sendButton">
+
+        <div id="confirmationMessageBlock" class="hidden">
+            <div id="message">
+                <p class="message__sent">Письмо отправлено</p>
+                <span id="temaP" class="collaps__p__tema temaP">Тема: </span><span id="subjectField"></span>
+                <br>
+                <span id="opisanieP" class="collaps__p__opisanie opisanieP">Описание: </span><span id="textareaField"></span>
+                <br>
+                <button id="closeButton">OK</button>
+            </div>
+        </div>
 
         </form>
 
