@@ -875,7 +875,8 @@ a {
 }
 
 .work__example:hover {
-  box-shadow: 0 4px 20px 0 rgba(224, 211, 27, 0.918);
+  /* box-shadow: 0 4px 20px 0 rgba(224, 211, 27, 0.918); */
+  box-shadow:  0 4px 20px 0 #F06C64;
   cursor: pointer;
   transform: scale(1.1);
 }
