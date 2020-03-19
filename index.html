@@ -45,8 +45,20 @@
         <div id="slider" class="slider">
             <div class="wrapper">
                 <div id="slides" class="slides">
-                    <img src="./assets/images/png/Slide-1.png" alt="image" class="slide">
-                    <img src="./assets/images/png/Slide-2.png" alt="image" class="slide">
+                    <div class="slide" id="firstSlide">
+                        <img src="./assets/images/png/Slide-1.png" alt="image" usemap="#phonemap">
+                        <map name="phonemap">
+                            <area shape="rect" title="Push me" coords="126,119,314,452" id="VerticalPhoneSquare">
+                            <area shape="circle" title="Push me" coords="221,483,23" id="VerticalPhoneButton">
+                            <area shape="rect" title="Push me" coords="485,191,818,379" id="HorizontalPhoneSquare">
+                            <area shape="circle" title="Push me" coords="455,285,23" id="HorizontalPhoneButton">
+                        </map>
+                        <div id="hiddenVerImage"></div>
+                        <div id="hiddenHorImage"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/png/Slide-2.png" alt="image">
+                    </div>
                 </div>
                 <button id="prev" title="previous image" class="previous__slide__arrow"></button>
                 <button id="next" title="next image" class="next__slide__arrow"></button>
@@ -341,19 +353,6 @@
         </div>
       </div>
     </section>
-
-    <div id="slider" class="slider">
-        <div class="wrapper">
-            <div id="slides" class="slides">
-                <!-- <img src="./assets/images/png/Slide1.png" alt="image" class="slide">
-                <img src="./assets/images/png/Slide2.png" alt="image" class="slide"> -->
-                <img src="./assets/images/png/Slide-1.png" alt="image" class="slide">
-                <img src="./assets/images/png/Slide-2.png" alt="image" class="slide">
-            </div>
-            <a id="prev" class="control prev"></a>
-            <a id="next" class="control next"></a>
-        </div>
-    </div>
 
   </main>
 

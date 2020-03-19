@@ -1619,7 +1619,7 @@ button {
 }
 
 .slides.shifting {
-    transition: left .2s ease-out;
+    transition: left .6s ease-out;
 }
 
 .slide {
@@ -1644,4 +1644,34 @@ button {
     position: absolute;
     top: 286px;
     right: 40px;
+}
+
+/****************************** Let's add turn on/off phone screen feature *********/
+
+.hidden_v_image {
+    position: absolute;
+    display: block;
+    background: url(./assets/images/png/VerticalBlackScreen.png);
+    width: 195px;
+    height: 340px;
+    top: 116px;
+    left: 123px;
+    /* opacity: 0;
+    transition: opacity 2s ease-in; */
+}
+
+.hidden_h_image {
+    position: absolute;
+    display: block;
+    background: url(./assets/images/png/HorizontalBlackScreen.png);
+    width: 340px;
+    height: 195px;
+    top: 188px;
+    left: 481px;
+    /* opacity: 0;
+    transition: opacity 2s ease-in; */
+}
+
+#firstSlide map {
+    cursor: pointer;
 }

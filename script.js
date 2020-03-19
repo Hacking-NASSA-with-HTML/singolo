@@ -1,11 +1,6 @@
-
+/************************************************ Let's Roll ***********************/
 
 const NAVIGATION = document.getElementById('navigation');
-const BUTTON = document.getElementById('sendButton');
-const CLOSE_BUTTON = document.getElementById('closeButton');
-const subjectFieldVariable = document.getElementById('subjectField');
-const textareaFieldVariable = document.getElementById('textareaField');
-
 
 
 NAVIGATION.addEventListener('click', (event) => {
@@ -134,8 +129,48 @@ function slide(slider, items, prev, next) {
 
 slide(slider, sliderItems, prev, next);
 
+/****************************** Let's add turn on/off phone screen feature *********/
+
+/* Vertical Phone on Slide 1 */
+const Vertical_phone_Square = document.getElementById('VerticalPhoneSquare');
+const Vertical_Phone_Button = document.getElementById('VerticalPhoneButton');
+
+
+Vertical_phone_Square.addEventListener('click', () => {
+    /* This method working too */
+    /*if (Vertical_phone_Square.classList.contains('hidden_v_image')) {
+        Vertical_phone_Square.classList.remove('hidden_v_image');
+    } else {
+        Vertical_phone_Square.classList.add('hidden_v_image');
+    }*/
+    Vertical_phone_Square.classList.toggle('hidden_v_image');
+});
+
+Vertical_Phone_Button.addEventListener('click', () => {
+    Vertical_phone_Square.classList.toggle('hidden_v_image');
+});
+
+/* Horizontal Phone on Slide 1 */
+const Horizontal_Phone_Square = document.getElementById('HorizontalPhoneSquare');
+const Horizontal_Phone_Button = document.getElementById('HorizontalPhoneButton');
+
+
+Horizontal_Phone_Square.addEventListener('click', () => {
+    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+});
+
+Horizontal_Phone_Button.addEventListener('click', () => {
+    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+});
+
 
 /********************************** Let's make modal message from form *************/
+
+const BUTTON = document.getElementById('sendButton');
+const CLOSE_BUTTON = document.getElementById('closeButton');
+const subjectFieldVariable = document.getElementById('subjectField');
+const textareaFieldVariable = document.getElementById('textareaField');
+
 
 BUTTON.addEventListener('click', () => {
     const subject = document.getElementById('subject').value.toString();
