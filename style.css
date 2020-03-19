@@ -1619,7 +1619,7 @@ button {
 }
 
 .slides.shifting {
-    transition: left .6s ease-out;
+    transition: left .4s ease-out;
 }
 
 .slide {
