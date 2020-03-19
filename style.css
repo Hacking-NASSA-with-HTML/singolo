@@ -184,7 +184,7 @@
 
 .slider__img_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -1594,4 +1594,54 @@ button {
 #closeButton:hover {
     color: #d6564f;
     background-color: #f0d8d9;
+}
+
+/***************************************** Let's make slider ***********************/
+
+.slider {
+    width: 1020px;
+    height: 594px;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 1020px;
+    height: 594px;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -1020px;
+    width: 20400px;
+}
+
+.slides.shifting {
+    transition: left .2s ease-out;
+}
+
+.slide {
+    width: 1020px;
+    height: 594px;
+    transition: all 1s;
+    position: relative;
+}
+
+#prev:active,
+#next:active {
+    transform: scale(.8);
+}
+
+#prev {
+    position: absolute;
+    top: 287px;
+    left: 0px;
+}
+
+#next {
+    position: absolute;
+    top: 286px;
+    right: 40px;
 }

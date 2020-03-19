@@ -42,17 +42,15 @@
         <h1 class="visuallyhidden">RSSchool 2020-Q1. Let's roll</h1>
       </div>
       <div class="slider__img_container">
-        <div class="previous__slide__arrow__container">
-          <button title="previous image" class="previous__slide__arrow"></button>
-        </div>
-        <div class="vertical__img__container">
-          <div class="vertical__img"></div>
-        </div>
-        <div class="horizontal__img__container">
-          <div class="horizontal__img"></div>
-        </div>
-        <div class="next__slide__arrow__container">
-          <button title="next image" class="next__slide__arrow"></button>
+        <div id="slider" class="slider">
+            <div class="wrapper">
+                <div id="slides" class="slides">
+                    <img src="./assets/images/png/Slide-1.png" alt="image" class="slide">
+                    <img src="./assets/images/png/Slide-2.png" alt="image" class="slide">
+                </div>
+                <button id="prev" title="previous image" class="previous__slide__arrow"></button>
+                <button id="next" title="next image" class="next__slide__arrow"></button>
+            </div>
         </div>
       </div>
     </section>
@@ -343,6 +341,19 @@
         </div>
       </div>
     </section>
+
+    <div id="slider" class="slider">
+        <div class="wrapper">
+            <div id="slides" class="slides">
+                <!-- <img src="./assets/images/png/Slide1.png" alt="image" class="slide">
+                <img src="./assets/images/png/Slide2.png" alt="image" class="slide"> -->
+                <img src="./assets/images/png/Slide-1.png" alt="image" class="slide">
+                <img src="./assets/images/png/Slide-2.png" alt="image" class="slide">
+            </div>
+            <a id="prev" class="control prev"></a>
+            <a id="next" class="control next"></a>
+        </div>
+    </div>
 
   </main>
 
