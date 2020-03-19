@@ -150,6 +150,14 @@ Vertical_Phone_Button.addEventListener('click', () => {
     Vertical_phone_Square.classList.toggle('hidden_v_image');
 });
 
+Vertical_phone_Square.addEventListener('touchstart', () => {
+    Vertical_phone_Square.classList.toggle('hidden_v_image');
+});
+
+Vertical_Phone_Button.addEventListener('touchstart', () => {
+    Vertical_phone_Square.classList.toggle('hidden_v_image');
+});
+
 /* Horizontal Phone on Slide 1 */
 const Horizontal_Phone_Square = document.getElementById('HorizontalPhoneSquare');
 const Horizontal_Phone_Button = document.getElementById('HorizontalPhoneButton');
@@ -160,6 +168,14 @@ Horizontal_Phone_Square.addEventListener('click', () => {
 });
 
 Horizontal_Phone_Button.addEventListener('click', () => {
+    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+});
+
+Horizontal_Phone_Square.addEventListener('touchstart', () => {
+    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+});
+
+Horizontal_Phone_Button.addEventListener('touchstart', () => {
     Horizontal_Phone_Square.classList.toggle('hidden_h_image');
 });
 
