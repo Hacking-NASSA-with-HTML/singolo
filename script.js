@@ -129,6 +129,7 @@ function slide(slider, items, prev, next) {
 
 slide(slider, sliderItems, prev, next);
 
+
 /****************************** Let's add turn on/off phone screen feature *********/
 
 /* Vertical Phone on Slide 1 */
@@ -236,11 +237,6 @@ function onScroll(event) {
 };
 
 window.document.addEventListener('scroll', onScroll);
-
-
-
-
-
 
 
 /********************************** Let's make modal message from form *************/
