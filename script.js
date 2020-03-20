@@ -226,7 +226,7 @@ function onScroll(event) {
         var currLink = sections[i];
         var val = currLink.getAttribute('href');
         var refElement = document.querySelector(val);
-        if (refElement.offsetTop - 110 <= scrollPos && (refElement.offsetTop - 110 + refElement.offsetHeight > scrollPos)) {
+        if (refElement.offsetTop - 200 <= scrollPos && (refElement.offsetTop - 200 + refElement.offsetHeight > scrollPos)) {
             document.querySelector('#navigation a').classList.remove('focused');
             currLink.classList.add('focused');
         } else {
