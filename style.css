@@ -1677,3 +1677,17 @@ button {
 #firstSlide map {
     cursor: pointer;
 }
+
+
+/****************************** Highlighting tags from Portfolio feature ***********/
+
+.highlighted__tag {
+    color: #dedede;
+}
+
+
+/***************************** add borders to Portfolio images on click ***********/
+
+.on__mouse__down__image__border {
+    outline: 5px solid #F06C64;
+}

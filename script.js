@@ -180,6 +180,35 @@ Horizontal_Phone_Button.addEventListener('touchstart', () => {
 });
 
 
+/****************************** Highlighting tags from Portfolio feature ***********/
+
+const HIGHLIGHTED_TAG = document.getElementById('tagWrapper');
+
+
+HIGHLIGHTED_TAG.addEventListener('click', (event) => {
+    HIGHLIGHTED_TAG.querySelectorAll('#tagWrapper>button').forEach(el => el.classList.remove('highlighted__tag'));
+    event.target.classList.add('highlighted__tag');
+});
+
+
+/***************************** add borders to Portfolio images on click ***********/
+
+const OUTLINED_PORTFOLIO_IMAGE = document.getElementById('portfolioImageContainer');
+const portfolioItem = document.getElementById('portfolioItem');
+
+
+OUTLINED_PORTFOLIO_IMAGE.addEventListener('click', (event) => {
+    OUTLINED_PORTFOLIO_IMAGE.querySelectorAll('#portfolioItem').forEach(el => el.classList.remove('on__mouse__down__image__border'));
+    event.target.classList.add('on__mouse__down__image__border');
+});
+
+
+/***************************** add shuffling to Portfolio images *******************/
+
+
+
+
+
 /********************************** Let's make modal message from form *************/
 
 const BUTTON = document.getElementById('sendButton');
@@ -227,4 +256,3 @@ const DISABLE_FORM = document.getElementById('nearFooterForm');
 DISABLE_FORM.addEventListener('submit', (event) => {
     event.preventDefault();
 });
-
