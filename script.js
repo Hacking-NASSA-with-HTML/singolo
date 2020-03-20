@@ -205,8 +205,15 @@ OUTLINED_PORTFOLIO_IMAGE.addEventListener('click', (event) => {
 
 /***************************** add shuffling to Portfolio images *******************/
 
+const Portfolio_Button_Tag = document.getElementById('tagWrapper');
 
 
+Portfolio_Button_Tag.addEventListener('click', () => {
+
+    for (var i = OUTLINED_PORTFOLIO_IMAGE.children.length; i >= 0; i--) {
+        OUTLINED_PORTFOLIO_IMAGE.appendChild(OUTLINED_PORTFOLIO_IMAGE.children[Math.random() * i | 0]);
+    }
+});
 
 
 /********************************** Let's make modal message from form *************/
