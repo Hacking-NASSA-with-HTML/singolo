@@ -156,6 +156,7 @@ html {
   width: 1020px;
 }
 
+
 /***********************<section class="slider__section">***********************/
 
 .slider__section {
@@ -505,6 +506,7 @@ html {
   background-color: #fff;
 }
 
+
 /******************************************kostyls  for services section**********************************/
 .services__item__container:nth-child(1) .service__item__pen__img {
   margin-left: 0;
@@ -750,6 +752,7 @@ a {
   margin-bottom: 61px;
 }
 
+
 /**************** The end of fixes from 1 part *************************************/
 
 /****************************************** Section  Portfolio *********************/
@@ -888,6 +891,7 @@ a {
 .work__example:nth-child(n+13) {
   display: none;
 }
+
 
 /*********************************** The end of Section  PORTFOLIO *****************/
 
@@ -1036,6 +1040,7 @@ a {
   margin: 23.5px 0 0 0;
 }
 
+
 /*********************************** The end of Section  About Us ******************/
 
 /* Improvements for 150% zoom */
@@ -1046,6 +1051,7 @@ a {
 .header {
   margin: 0 auto;
 }
+
 
 /****************************************** Section  Contacts **********************/
 
@@ -1390,6 +1396,7 @@ button {
   letter-spacing: 0.05px;
 }
 
+
 /********************************** The end of Section  Contacts *******************/
 
 /********************************************* footer ******************************/
@@ -1453,6 +1460,7 @@ button {
   cursor: pointer;
   transform: scale(1.1);
 }
+
 
 /********************************** Let's make our header fixed to top *************/
 
@@ -1599,6 +1607,7 @@ button {
     background-color: #f0d8d9;
 }
 
+
 /***************************************** Let's make slider ***********************/
 
 .slider {
@@ -1649,6 +1658,7 @@ button {
     right: 40px;
 }
 
+
 /****************************** Let's add turn on/off phone screen feature *********/
 
 .hidden_v_image {
@@ -1691,4 +1701,167 @@ button {
 
 .on__mouse__down__image__border {
     outline: 5px solid #F06C64;
+}
+
+
+/*****************************                                          ***********/
+/*****************************        @media (max-width: 768px)         ***********/
+/*****************************                                          ***********/
+/*****************************                                          ***********/
+
+@media (max-width: 768px)  {
+
+    .header {
+        margin: 0 0 0 0;
+    }
+
+
+    /************************************ Section Our Services ************************/
+
+    .services__section {
+        height: 750px;
+    }
+
+    .services__section_container {
+        margin: 0 40px 0 40px;
+    }
+
+    .services__item__container:nth-child(1) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(2) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(3) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(4) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(5) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(6) {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container {
+        width: 45%;
+    }
+
+    #kostylsForUpperRow {
+        margin: 0 0 0 0;
+    }
+
+    .kostylsForUpperRow {
+        margin: 0 0 0 0;
+    }
+
+    .services__items__block {
+        width: 100%;
+        height: 500px;
+    }
+
+    .services__items__container {
+        width: 100%;
+        height: 700px;
+    }
+
+    .services__ul {
+        width: 100%;
+        height: 500px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .services__item__container:nth-child(1) .service__item__paragraph {
+        width: 300px;
+    }
+
+    .services__item__container:nth-child(2) .service__item__paragraph {
+        width: 300px;
+    }
+
+    .services__item__container:nth-child(3) .service__item__paragraph {
+        width: 300px;
+    }
+
+    .services__item__container:nth-child(4) .service__item__paragraph {
+        width: 300px;
+    }
+
+    .services__item__container:nth-child(5) .service__item__paragraph {
+        width: 300px;
+    }
+
+    .services__item__container:nth-child(6) .service__item__paragraph {
+        width: 300px;
+    }
+
+
+    /*************************************** Section Portfolio ************************/
+
+    .portfolio {
+        height: 1300px;
+        width: 100%;
+    }
+
+    #portfolioImageContainer {
+        width: 710px;
+        height: 820px;
+        margin: 50px auto 0;
+        padding: 0 0 0 0;
+    }
+
+    #portfolioImageContainer li::before {
+        content: "";
+        float: left;
+        padding-top: 100%;
+    }
+
+    .work__example {
+        width: 220px;
+        height: 187px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        flex: 1 0 20%;
+    }
+
+    .work__example:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .work__example:nth-child(4) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .work__example:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .work__example:nth-child(8) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .work__example:nth-child(9) {
+        margin-right: 0;
+    }
+
+    .work__example:nth-child(12) {
+        margin-right: 0;
+    }
+
 }
