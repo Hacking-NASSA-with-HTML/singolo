@@ -2109,10 +2109,11 @@ button {
         width: 100%;
 		bottom: 0;
 		left: 0;
-		top: 110px;
-		background: #180808;
+		top: 96px;
+		background: #2D303A;
+        box-shadow: 40px -5px 20px rgba(0, 0, 0, 0.4);
 		z-index: 150;
-		transform: translateX(-100%);
+		transform: translateX(-110%);
 		transition: all 0.5s ease;
     }
 
