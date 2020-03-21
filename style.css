@@ -2100,7 +2100,7 @@ button {
         display: block;
         position: absolute;
         top: 20px;
-        left: 30px;
+        left: 50px;
         transition: transform .2s ease-in-out;
     }
 
@@ -2141,6 +2141,20 @@ button {
         height: 100%;
         padding-top: 0;
         margin: 0 0 0 0;
+    }
+
+    .logo__description::after {
+        content: "*";
+        position: relative;
+        top: 0px;
+        left: 10px;
+        font-size: 60px;
+        color: #df6760;
+    }
+
+    .logo {
+        height: 100%;
+        margin-left: 100px;
     }
 
 }
