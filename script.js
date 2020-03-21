@@ -303,6 +303,10 @@ CLOSE_MOBILE_MENU.addEventListener('click', () => {
     BODY.classList.toggle('active_menu');
 });
 
+CLOSE_MOBILE_MENU.addEventListener('touchmove', () => {
+    BODY.classList.toggle('active_menu');
+});
+
 
 /***************************************** Animation for hamburger *****************/
 
