@@ -286,3 +286,14 @@ const DISABLE_FORM = document.getElementById('nearFooterForm');
 DISABLE_FORM.addEventListener('submit', (event) => {
     event.preventDefault();
 });
+
+
+/***************************************************** Mobile menu *****************/
+
+const HAMBURGER = document.getElementById('hamburgerBox');
+const BODY = document.getElementById('body');
+
+
+HAMBURGER.addEventListener('click', () => {
+    BODY.classList.toggle('active_menu');
+});
