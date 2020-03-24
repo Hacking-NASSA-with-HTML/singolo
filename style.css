@@ -278,6 +278,12 @@ html {
   opacity: 1;
 }
 
+.media__img__size__controller {
+    width: 1020px;
+    height: 594px;
+    /* position: relative; */
+}
+
 /***********************<section class="services__section">****************************/
 
 .services__section {
@@ -1874,12 +1880,19 @@ button {
 
 @media (max-width: 375px) {
 
+    .header {
+        margin: 0 0 0 0;
+        width: 375px;
+    }
+
     .header__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        /* margin: 0 auto; */
     }
 
     .logo__container {
+        width: 100px;
         margin-left: 60px;
     }
 
@@ -1888,12 +1901,80 @@ button {
     } */
 
     .logo__description {
-        font-size: 50px;
+        font-size: 20px;
+    }
+
+    .main {
+        width: 375px;
+    }
+
+    .slider__section {
+        width: 375px;
+        height: 218px;
+    }
+
+    .slider__img_container {
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        height: 218px;
+    }
+
+    .media__img__size__controller {
+        width: 375px;
+        height: 218px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 375px;
+        height: 218px;
+    }
+
+    .slides {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: -375px;
+        width: 7500px;
+    }
+
+    .slide {
+        width: 375px;
+        height: 218px;
+        transition: all 1s;
+        position: relative;
+    }
+
+    .hidden_v_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/VerticalBlackScreen.png);
+        width: 72px;
+        height: 125px;
+        top: 116px;
+        left: 123px;
+        /* opacity: 0;
+        transition: opacity 2s ease-in; */
+    }
+
+    .hidden_h_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/HorizontalBlackScreen.png);
+        width: 125px;
+        height: 72px;
+        top: 188px;
+        left: 481px;
+        /* opacity: 0;
+        transition: opacity 2s ease-in; */
     }
 
 
     #services {
         height: 1300px;
+        width: 375px;
     }
 
     .services__item__container {
@@ -1923,6 +2004,10 @@ button {
         font-size: 20px;
     }
 
+
+    #portfolio {
+        width: 375px;
+    }
 
     .work__example {
         width: 220px;
@@ -1974,8 +2059,10 @@ button {
     }
 
 
+
+
     .about__us {
-        /* width: 375px; */
+        width: 375px;
         width: 1020px;
         height: 1760px;
     }
@@ -2014,6 +2101,7 @@ button {
 
     .contact__us {
         height: 1322px;
+        width: 375px;
     }
 
     #sendButton {
@@ -2025,6 +2113,14 @@ button {
     .contact__info__subwrapper {
         margin-left: 11px;
         margin-top: 140px;
+    }
+
+
+    .footer {
+        width: 375px;
+        min-height: 76px;
+        background-color: #2d303a;
+        margin: 0 auto;
     }
 
     .footer__container {
@@ -2100,7 +2196,7 @@ button {
         display: block;
         position: absolute;
         top: 20px;
-        left: 80px;
+        left: 20px;
         transition: transform .2s ease-in-out;
     }
 
@@ -2149,7 +2245,7 @@ button {
         position: relative;
         top: 0px;
         left: 10px;
-        font-size: 60px;
+        font-size: 20px;
         color: #df6760;
     }
 

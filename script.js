@@ -1,4 +1,35 @@
 /************************************************ Let's Roll ***********************/
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.screen.width >= 320) {
+        p.setAttribute('usemap', '#phonemap375');
+    }
+
+    if (window.screen.width >= 376) {
+        p.setAttribute('usemap', '#phonemap768');
+    }
+
+    if (window.screen.width >= 769) {
+        p.setAttribute('usemap', '#phonemap1020');
+    }
+});
+
+var p = document.querySelector('.set__map');
+
+
+window.addEventListener('resize', function () {
+    if (window.screen.width >= 320) {
+        p.setAttribute('usemap', '#phonemap375');
+    }
+
+    if (window.screen.width >= 376) {
+        p.setAttribute('usemap', '#phonemap768');
+    }
+
+    if (window.screen.width >= 769) {
+        p.setAttribute('usemap', '#phonemap1020');
+    }
+});
+
 
 const NAVIGATION = document.getElementById('navigation');
 
