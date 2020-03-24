@@ -1,15 +1,15 @@
 /************************************************ Let's Roll ***********************/
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.screen.width >= 320) {
+    if (window.screen.width >= 320 && window.screen.width < 768) {
         p.setAttribute('usemap', '#phonemap375');
     }
 
-    if (window.screen.width >= 376) {
+    if (window.screen.width >= 768 && window.screen.width < 1020) {
         p.setAttribute('usemap', '#phonemap768');
     }
 
-    if (window.screen.width >= 769) {
+    if (window.screen.width >= 1020) {
         p.setAttribute('usemap', '#phonemap1020');
     }
 });
@@ -18,15 +18,15 @@ var p = document.querySelector('.set__map');
 
 
 window.addEventListener('resize', function () {
-    if (window.screen.width >= 320) {
+    if (window.screen.width >= 320 && window.screen.width < 768) {
         p.setAttribute('usemap', '#phonemap375');
     }
 
-    if (window.screen.width >= 376) {
+    if (window.screen.width >= 768 && window.screen.width < 1020) {
         p.setAttribute('usemap', '#phonemap768');
     }
 
-    if (window.screen.width >= 769) {
+    if (window.screen.width >= 1020) {
         p.setAttribute('usemap', '#phonemap1020');
     }
 });
@@ -165,51 +165,58 @@ slide(slider, sliderItems, prev, next);
 /****************************** Let's add turn on/off phone screen feature *********/
 
 /* Vertical Phone on Slide 1 */
-const Vertical_phone_Square = document.getElementById('VerticalPhoneSquare');
+
+//const Hidden_Ver_Image = document.getElementById('hiddenVerImage');
 const Vertical_Phone_Button = document.getElementById('VerticalPhoneButton');
+//Hidden_Ver_Image.classList.add('hidden_v_image');
+const VERTICAL_BLACK_CAP = document.querySelector('.hidden_v_image');
 
 
-Vertical_phone_Square.addEventListener('click', () => {
-    /* This method working too */
-    /*if (Vertical_phone_Square.classList.contains('hidden_v_image')) {
-        Vertical_phone_Square.classList.remove('hidden_v_image');
-    } else {
-        Vertical_phone_Square.classList.add('hidden_v_image');
-    }*/
-    Vertical_phone_Square.classList.toggle('hidden_v_image');
-});
-
+var verticalChecker = VERTICAL_BLACK_CAP.style.opacity = '0';
 Vertical_Phone_Button.addEventListener('click', () => {
-    Vertical_phone_Square.classList.toggle('hidden_v_image');
-});
-
-Vertical_phone_Square.addEventListener('touchstart', () => {
-    Vertical_phone_Square.classList.toggle('hidden_v_image');
+    if (verticalChecker) {
+        VERTICAL_BLACK_CAP.style.opacity = '1';
+        verticalChecker = false;
+    } else {
+        VERTICAL_BLACK_CAP.style.opacity = '0';
+        verticalChecker =true;
+    }
 });
 
 Vertical_Phone_Button.addEventListener('touchstart', () => {
-    Vertical_phone_Square.classList.toggle('hidden_v_image');
+    if (verticalChecker) {
+        VERTICAL_BLACK_CAP.style.opacity = '1';
+        verticalChecker = false;
+    } else {
+        VERTICAL_BLACK_CAP.style.opacity = '0';
+        verticalChecker = true;
+    }
 });
 
-/* Horizontal Phone on Slide 1 */
-const Horizontal_Phone_Square = document.getElementById('HorizontalPhoneSquare');
+// Horizontal Phone on Slide 1
 const Horizontal_Phone_Button = document.getElementById('HorizontalPhoneButton');
+const HORIZONTAL_BLACK_CAP = document.querySelector('.hidden_h_image');
 
 
-Horizontal_Phone_Square.addEventListener('click', () => {
-    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
-});
-
+var horizontalChecker = HORIZONTAL_BLACK_CAP.style.opacity = '0';
 Horizontal_Phone_Button.addEventListener('click', () => {
-    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
-});
-
-Horizontal_Phone_Square.addEventListener('touchstart', () => {
-    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+    if (horizontalChecker) {
+        HORIZONTAL_BLACK_CAP.style.opacity = '1';
+        horizontalChecker = false;
+    } else {
+        HORIZONTAL_BLACK_CAP.style.opacity = '0';
+        horizontalChecker = true;
+    }
 });
 
 Horizontal_Phone_Button.addEventListener('touchstart', () => {
-    Horizontal_Phone_Square.classList.toggle('hidden_h_image');
+    if (horizontalChecker) {
+        HORIZONTAL_BLACK_CAP.style.opacity = '1';
+        horizontalChecker = false;
+    } else {
+        HORIZONTAL_BLACK_CAP.style.opacity = '0';
+        horizontalChecker = true;
+    }
 });
 
 

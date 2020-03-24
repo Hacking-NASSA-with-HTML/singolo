@@ -1675,8 +1675,7 @@ button {
     height: 340px;
     top: 116px;
     left: 123px;
-    /* opacity: 0;
-    transition: opacity 2s ease-in; */
+    transition: opacity 2s;
 }
 
 .hidden_h_image {
@@ -1687,8 +1686,7 @@ button {
     height: 195px;
     top: 188px;
     left: 481px;
-    /* opacity: 0;
-    transition: opacity 2s ease-in; */
+    transition: opacity 2s;
 }
 
 #firstSlide map {
