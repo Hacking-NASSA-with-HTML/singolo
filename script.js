@@ -1,4 +1,5 @@
 /************************************************ Let's Roll ***********************/
+
 document.addEventListener('DOMContentLoaded', function () {
     if (window.screen.width >= 320) {
         p.setAttribute('usemap', '#phonemap375');
