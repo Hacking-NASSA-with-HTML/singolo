@@ -2261,6 +2261,8 @@ button {
     }
 
 
+    /************************************* Our Services 375 ***************************/
+
     #services {
         height: 1300px;
         width: 375px;
@@ -2293,6 +2295,8 @@ button {
         font-size: 20px;
     }
 
+
+    /************************************* Portfolio 375 ******************************/
 
     #portfolio {
         width: 375px;
@@ -2348,6 +2352,8 @@ button {
     }
 
 
+    /************************************* About Us 375 *******************************/
+
     .about__us {
         width: 375px;
         width: 1020px;
@@ -2373,6 +2379,13 @@ button {
     }
 
 
+    /****************************************** Contact 375 ***************************/
+
+    .contact__us {
+        height: 1322px;
+        width: 375px;
+    }
+
     .p__contact__us__description {
         font-size: 22px;
         width: 350px;
@@ -2386,11 +2399,6 @@ button {
         height: auto;
     }
 
-    .contact__us {
-        height: 1322px;
-        width: 375px;
-    }
-
     #sendButton {
         top: 450px;
         left: 50px;
@@ -2402,6 +2410,8 @@ button {
         margin-top: 140px;
     }
 
+
+    /******************************************* Footer 375 ***************************/
 
     .footer {
         width: 375px;
