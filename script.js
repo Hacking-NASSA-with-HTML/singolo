@@ -1,7 +1,12 @@
 /************************************************ Let's Roll ***********************/
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.screen.width >= 320 && window.screen.width < 768) {
+
+    if (window.screen.width >= 320) {
+        p.setAttribute('usemap', '#phonemap320');
+    }
+
+    if (window.screen.width >= 321 && window.screen.width < 768) {
         p.setAttribute('usemap', '#phonemap375');
     }
 
@@ -18,7 +23,12 @@ var p = document.querySelector('.set__map');
 
 
 window.addEventListener('resize', function () {
-    if (window.screen.width >= 320 && window.screen.width < 768) {
+
+    if (window.screen.width = 320) {
+        p.setAttribute('usemap', '#phonemap320');
+    }
+
+    if (window.screen.width >= 321 && window.screen.width < 768) {
         p.setAttribute('usemap', '#phonemap375');
     }
 
@@ -335,6 +345,63 @@ Horizontal_Phone_Button375.addEventListener('touchstart', () => {
 });
 
 
+/************************* Let's add turn on/off phone screen feature 320 **********/
+
+// Vertical Phone on Slide 1 320
+
+const Vertical_Phone_Button320 = document.getElementById('VerticalPhoneButton320');
+const VERTICAL_BLACK_CAP320 = document.querySelector('.hidden_v_image');
+
+
+var verticalChecker320 = VERTICAL_BLACK_CAP320.style.opacity = '0';
+Vertical_Phone_Button320.addEventListener('click', () => {
+    if (verticalChecker320) {
+        VERTICAL_BLACK_CAP320.style.opacity = '1';
+        verticalChecker320 = false;
+    } else {
+        VERTICAL_BLACK_CAP320.style.opacity = '0';
+        verticalChecker320 = true;
+    }
+});
+
+Vertical_Phone_Button320.addEventListener('touchstart', () => {
+    if (verticalChecker320) {
+        VERTICAL_BLACK_CAP320.style.opacity = '1';
+        verticalChecker320 = false;
+    } else {
+        VERTICAL_BLACK_CAP320.style.opacity = '0';
+        verticalChecker320 = true;
+    }
+});
+
+// Horizontal Phone on Slide 1 320
+
+const Horizontal_Phone_Button320 = document.getElementById('HorizontalPhoneButton320');
+const HORIZONTAL_BLACK_CAP320 = document.querySelector('.hidden_h_image');
+
+
+var horizontalChecker320 = HORIZONTAL_BLACK_CAP320.style.opacity = '0';
+Horizontal_Phone_Button320.addEventListener('click', () => {
+    if (horizontalChecker320) {
+        HORIZONTAL_BLACK_CAP320.style.opacity = '1';
+        horizontalChecker320 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP320.style.opacity = '0';
+        horizontalChecker320 = true;
+    }
+});
+
+Horizontal_Phone_Button320.addEventListener('touchstart', () => {
+    if (horizontalChecker320) {
+        HORIZONTAL_BLACK_CAP320.style.opacity = '1';
+        horizontalChecker320 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP320.style.opacity = '0';
+        horizontalChecker320 = true;
+    }
+});
+
+
 /****************************** Highlighting tags from Portfolio feature ***********/
 
 const HIGHLIGHTED_TAG = document.getElementById('tagWrapper');
@@ -470,3 +537,5 @@ BURGER_BODY.addEventListener('click', () => {
     BURGER_BODY.classList.toggle('activeForHumburger');
 });
 
+
+/************************************ The Victory looks like this. *****************/

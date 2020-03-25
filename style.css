@@ -2245,88 +2245,6 @@ button {
     }
 
 
-    /******************************************* Slider 375 ***************************/
-
-    .slider__section {
-        width: 375px;
-        height: 218px;
-    }
-
-    .slider__img_container {
-        display: flex;
-        justify-content: center;
-        width: 375px;
-        height: 218px;
-    }
-
-    .slider {
-        width: 375px;
-        height: 218px;
-    }
-
-    .wrapper {
-        overflow: hidden;
-        position: relative;
-        width: 375px;
-        height: 218px;
-    }
-
-    .slides {
-        display: flex;
-        position: relative;
-        top: 0;
-        left: -375px;
-        width: 7500px;
-    }
-
-    .slide {
-        width: 375px;
-        height: 218px;
-        transition: all 1s;
-        position: relative;
-    }
-
-    .hidden_v_image {
-        position: absolute;
-        display: block;
-        background: url(./assets/images/png/VerticalBlackScreen375.png);
-        width: 72px;
-        height: 126px;
-        top: 42px;
-        left: 45px;
-        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
-    }
-
-    .hidden_h_image {
-        position: absolute;
-        display: block;
-        background: url(./assets/images/png/VerticalBlackScreen375.png);
-        width: 72px;
-        height: 126px;
-        top: 41px;
-        left: 204px;
-        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
-        transform: rotate(90deg);
-    }
-
-    .media__img__size__controller {
-        width: 375px;
-        height: 218px;
-    }
-
-    #prev {
-        position: absolute;
-        top: 103px;
-        left: -29px;
-    }
-
-    #next {
-        position: absolute;
-        top: 99px;
-        right: 21px;
-    }
-
-
     /************************************* Our Services 375 ***************************/
 
     #services {
@@ -2852,6 +2770,7 @@ button {
 }
 
 
+/**********************************************For Mobile menu *********************/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
     .hamburger__box {
@@ -2918,3 +2837,209 @@ button {
     }
 
 }
+
+
+/*****************************************                       *******************/
+/*****************************************kostyls for Slider 320 *******************/
+/*****************************************kostyls for Slider 320 *******************/
+/*****************************************                       *******************/
+/*                        just put slider-375 apart from slider 320 size           */
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+
+    /******************************************* Slider 375 ***************************/
+
+    .slider__section {
+        width: 375px;
+        height: 218px;
+    }
+
+    .slider__img_container {
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        height: 218px;
+    }
+
+    .slider {
+        width: 375px;
+        height: 218px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 375px;
+        height: 218px;
+    }
+
+    .slides {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: -375px;
+        width: 7500px;
+    }
+
+    .slide {
+        width: 375px;
+        height: 218px;
+        transition: all 1s;
+        position: relative;
+    }
+
+    .hidden_v_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/VerticalBlackScreen375.png);
+        width: 72px;
+        height: 126px;
+        top: 42px;
+        left: 45px;
+        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
+    }
+
+    .hidden_h_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/VerticalBlackScreen375.png);
+        width: 72px;
+        height: 126px;
+        top: 41px;
+        left: 204px;
+        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
+        transform: rotate(90deg);
+    }
+
+    .media__img__size__controller {
+        width: 375px;
+        height: 218px;
+    }
+
+    #prev {
+        position: absolute;
+        top: 103px;
+        left: -29px;
+    }
+
+    #next {
+        position: absolute;
+        top: 99px;
+        right: 21px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************                       *******************/
+/*****************************************kostyls for Slider 320 *******************/
+/*****************************************kostyls for Slider 320 *******************/
+/*****************************************                       *******************/
+/*                                      just put slider-320 to 320 media size      */
+
+@media only screen and (max-width: 320px) {
+
+
+    /******************************************* Slider 375 ***************************/
+
+    .slider__section {
+        width: 320px;
+        height: 186px;
+    }
+
+    .slider__img_container {
+        display: flex;
+        justify-content: center;
+        width: 320px;
+        height: 186px;
+    }
+
+    .slider {
+        width: 320px;
+        height: 186px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 320px;
+        height: 186px;
+    }
+
+    .slides {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: -320px;
+        width: 6400px;
+    }
+
+    .slide {
+        width: 320px;
+        height: 186px;
+        transition: all 1s;
+        position: relative;
+    }
+
+    .hidden_v_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/VerticalBlackScreen320.png);
+        width: 61px;
+        height: 107px;
+        top: 36px;
+        left: 38px;
+        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
+    }
+
+    .hidden_h_image {
+        position: absolute;
+        display: block;
+        background: url(./assets/images/png/VerticalBlackScreen320.png);
+        width: 61px;
+        height: 107px;
+        top: 35px;
+        left: 174px;
+        transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
+        transform: rotate(90deg);
+    }
+
+    .media__img__size__controller {
+        width: 320px;
+        height: 186px;
+    }
+
+    #prev {
+        position: absolute;
+        top: 82px;
+        left: -27px;
+    }
+
+    #next {
+        position: absolute;
+        top: 79px;
+        right: 18px;
+    }
+
+}
+
+
+/************************************ The Victory looks like this. *****************/
