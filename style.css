@@ -2850,8 +2850,8 @@ button {
     /******************************************* Slider 375 ***************************/
 
     .slider__section {
-        width: 375px;
-        height: 218px;
+        width: 100%;
+        height: auto;
     }
 
     .slider__img_container {
@@ -2864,6 +2864,7 @@ button {
     .slider {
         width: 375px;
         height: 218px;
+        margin: 0 auto;
     }
 
     .wrapper {
