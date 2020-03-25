@@ -464,9 +464,9 @@ CLOSE_MOBILE_MENU.addEventListener('click', () => {
 
 /***************************************** Animation for hamburger *****************/
 
-const EL = document.getElementById('hamburgerBox');
+const BURGER_BODY = document.getElementById('hamburgerBox');
 
-EL.addEventListener('click', () => {
-    EL.classList.toggle('activeForHumburger');
+BURGER_BODY.addEventListener('click', () => {
+    BURGER_BODY.classList.toggle('activeForHumburger');
 });
 

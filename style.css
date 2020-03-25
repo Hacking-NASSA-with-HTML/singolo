@@ -2145,7 +2145,6 @@ button {
         min-height: 76px;
         background-color: #2d303a;
         margin: 0 auto;
-        /* align-self: center; */
     }
 
 
@@ -2172,17 +2171,12 @@ button {
     .header__container {
         display: flex;
         justify-content: space-between;
-        /* margin: 0 auto; */
     }
 
     .logo__container {
         width: 100px;
         margin-left: 60px;
     }
-
-    /* .navigation__container {
-        display: none;
-    } */
 
     .logo__description {
         font-size: 20px;
@@ -2234,7 +2228,6 @@ button {
         height: 126px;
         top: 42px;
         left: 45px;
-        /* transition: opacity 2s; */
         transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
     }
 
@@ -2246,7 +2239,6 @@ button {
         height: 126px;
         top: 41px;
         left: 204px;
-        /* transition: opacity 2s; */
         transition: opacity 2s cubic-bezier(0, 0.46, 0.57, 1);
         transform: rotate(90deg);
     }
@@ -2267,7 +2259,6 @@ button {
         top: 99px;
         right: 21px;
     }
-
 
 
     #services {
@@ -2357,8 +2348,6 @@ button {
     }
 
 
-
-
     .about__us {
         width: 375px;
         width: 1020px;
@@ -2443,7 +2432,7 @@ button {
 
 /***************************************************** Mobile menu *****************/
 
-.hamburger-box {
+.hamburger__box {
     position: relative;
     cursor: pointer;
     height: 56px;
@@ -2452,34 +2441,30 @@ button {
     transition: transform .2s ease-in-out;
 }
 
-.hamburger-box.activeForHumburger {
+.activeForHumburger {
     transform: rotate(270deg);
 }
 
-.hamburger-box .line {
+.hamburger__box .line {
     background-color: #fff;
     width: 100%;
     height: 10px;
     position: absolute;
 }
 
-.hamburger-box .line.l1 {
+.hamburger__box .line.l1 {
     top: 0;
     left: 0;
 }
 
-.hamburger-box .line.l2 {
+.hamburger__box .line.l2 {
     top: 23px;
     left: 0;
 }
 
-.hamburger-box .line.l3 {
+.hamburger__box .line.l3 {
     bottom: 0;
     right: 0;
-}
-
-.hamburger.activeForHumburger {
-    transform: rotate(270deg);
 }
 
 .active_menu .header__container .navigation__section {
@@ -2490,7 +2475,7 @@ button {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
-    .hamburger-box{
+    .hamburger__box {
         display: block;
         position: absolute;
         top: 20px;
