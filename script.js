@@ -162,9 +162,9 @@ function slide(slider, items, prev, next) {
 slide(slider, sliderItems, prev, next);
 
 
-/****************************** Let's add turn on/off phone screen feature *********/
+/************************* Let's add turn on/off phone screen feature 1020 *********/
 
-/* Vertical Phone on Slide 1 */
+// Vertical Phone on Slide 1
 
 //const Hidden_Ver_Image = document.getElementById('hiddenVerImage');
 const Vertical_Phone_Button = document.getElementById('VerticalPhoneButton');
@@ -194,6 +194,7 @@ Vertical_Phone_Button.addEventListener('touchstart', () => {
 });
 
 // Horizontal Phone on Slide 1
+
 const Horizontal_Phone_Button = document.getElementById('HorizontalPhoneButton');
 const HORIZONTAL_BLACK_CAP = document.querySelector('.hidden_h_image');
 
@@ -216,6 +217,120 @@ Horizontal_Phone_Button.addEventListener('touchstart', () => {
     } else {
         HORIZONTAL_BLACK_CAP.style.opacity = '0';
         horizontalChecker = true;
+    }
+});
+
+
+/************************* Let's add turn on/off phone screen feature 768 **********/
+
+// Vertical Phone on Slide 1 768
+
+const Vertical_Phone_Button768 = document.getElementById('VerticalPhoneButton768');
+const VERTICAL_BLACK_CAP768 = document.querySelector('.hidden_v_image');
+
+
+var verticalChecker768 = VERTICAL_BLACK_CAP768.style.opacity = '0';
+Vertical_Phone_Button768.addEventListener('click', () => {
+    if (verticalChecker768) {
+        VERTICAL_BLACK_CAP768.style.opacity = '1';
+        verticalChecker768 = false;
+    } else {
+        VERTICAL_BLACK_CAP768.style.opacity = '0';
+        verticalChecker768 = true;
+    }
+});
+
+Vertical_Phone_Button768.addEventListener('touchstart', () => {
+    if (verticalChecker768) {
+        VERTICAL_BLACK_CAP768.style.opacity = '1';
+        verticalChecker768 = false;
+    } else {
+        VERTICAL_BLACK_CAP768.style.opacity = '0';
+        verticalChecker768 = true;
+    }
+});
+
+// Horizontal Phone on Slide 1 768
+
+const Horizontal_Phone_Button768 = document.getElementById('HorizontalPhoneButton768');
+const HORIZONTAL_BLACK_CAP768 = document.querySelector('.hidden_h_image');
+
+
+var horizontalChecker768 = HORIZONTAL_BLACK_CAP768.style.opacity = '0';
+Horizontal_Phone_Button768.addEventListener('click', () => {
+    if (horizontalChecker768) {
+        HORIZONTAL_BLACK_CAP768.style.opacity = '1';
+        horizontalChecker768 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP768.style.opacity = '0';
+        horizontalChecker768 = true;
+    }
+});
+
+Horizontal_Phone_Button768.addEventListener('touchstart', () => {
+    if (horizontalChecker768) {
+        HORIZONTAL_BLACK_CAP768.style.opacity = '1';
+        horizontalChecker768 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP768.style.opacity = '0';
+        horizontalChecker768 = true;
+    }
+});
+
+
+/************************* Let's add turn on/off phone screen feature 375 **********/
+
+// Vertical Phone on Slide 1 375
+
+const Vertical_Phone_Button375 = document.getElementById('VerticalPhoneButton375');
+const VERTICAL_BLACK_CAP375 = document.querySelector('.hidden_v_image');
+
+
+var verticalChecker375 = VERTICAL_BLACK_CAP375.style.opacity = '0';
+Vertical_Phone_Button375.addEventListener('click', () => {
+    if (verticalChecker375) {
+        VERTICAL_BLACK_CAP375.style.opacity = '1';
+        verticalChecker375 = false;
+    } else {
+        VERTICAL_BLACK_CAP375.style.opacity = '0';
+        verticalChecker375 = true;
+    }
+});
+
+Vertical_Phone_Button375.addEventListener('touchstart', () => {
+    if (verticalChecker375) {
+        VERTICAL_BLACK_CAP375.style.opacity = '1';
+        verticalChecker375 = false;
+    } else {
+        VERTICAL_BLACK_CAP375.style.opacity = '0';
+        verticalChecker375 = true;
+    }
+});
+
+// Horizontal Phone on Slide 1 375
+
+const Horizontal_Phone_Button375 = document.getElementById('HorizontalPhoneButton375');
+const HORIZONTAL_BLACK_CAP375 = document.querySelector('.hidden_h_image');
+
+
+var horizontalChecker375 = HORIZONTAL_BLACK_CAP375.style.opacity = '0';
+Horizontal_Phone_Button375.addEventListener('click', () => {
+    if (horizontalChecker375) {
+        HORIZONTAL_BLACK_CAP375.style.opacity = '1';
+        horizontalChecker375 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP375.style.opacity = '0';
+        horizontalChecker375 = true;
+    }
+});
+
+Horizontal_Phone_Button375.addEventListener('touchstart', () => {
+    if (horizontalChecker375) {
+        HORIZONTAL_BLACK_CAP375.style.opacity = '1';
+        horizontalChecker375 = false;
+    } else {
+        HORIZONTAL_BLACK_CAP375.style.opacity = '0';
+        horizontalChecker375 = true;
     }
 });
 
@@ -266,7 +381,7 @@ function onScroll(event) {
         var currLink = sections[i];
         var val = currLink.getAttribute('href');
         var refElement = document.querySelector(val);
-        if (refElement.offsetTop - 200 <= scrollPos && (refElement.offsetTop - 200 + refElement.offsetHeight > scrollPos)) {
+        if (refElement.offsetTop - 400 <= scrollPos && (refElement.offsetTop - 400 + refElement.offsetHeight > scrollPos)) {
             document.querySelector('#navigation a').classList.remove('focused');
             currLink.classList.add('focused');
         } else {
@@ -339,12 +454,12 @@ HAMBURGER.addEventListener('click', () => {
 });
 
 CLOSE_MOBILE_MENU.addEventListener('click', () => {
-    BODY.classList.toggle('active_menu');
+    BODY.classList.remove('active_menu');
 });
 
-CLOSE_MOBILE_MENU.addEventListener('touchmove', () => {
+/*CLOSE_MOBILE_MENU.addEventListener('touchmove', () => {
     BODY.classList.toggle('active_menu');
-});
+});*/
 
 
 /***************************************** Animation for hamburger *****************/
