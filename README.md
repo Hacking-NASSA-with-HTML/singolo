@@ -1,2 +1,2 @@
 # singolo
-## https://vyacheslavv44.github.io/singolo
+## https://Hacking-NASSA-with-HTML.github.io/singolo
